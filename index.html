@@ -8,11 +8,12 @@
     <script src="https://kit.fontawesome.com/80833262c1.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="style.css">
     <title>Lets know the weather!</title>
 </head>
 <body>
     <header class="header">
-        <h1>Weather Dashboard</h1>
+        <h1 class="top">Weather Dashboard</h1>
     </header>
 
     <div class="container">
@@ -21,11 +22,13 @@
                 <h1>Search for a City:</h1>
             </div>
             <div class="row">
-                <input type="text" class="searchInput" >
+                <input type="text" class="searchInput" placeholder="Search">
                 <button class="searchBtn">
                 <i class="fas fa-search"></i>
                 </button>
+                <div class="prevSearch"></div>
             </div>
+            
         </div>
         <div class="col-two-container">
             <div class="current-forecast">
@@ -34,22 +37,25 @@
                     <h1 class="currentDate"></h1>
                     <img class="weatherIcon"></img>
                 </div>
-                <div class="row">
-                    <p class="temp">Temp:</p>
+            <section class="cruz">
+                <div class="current">
+                    <p >Temp:<span class="temp"></span></p>
+
                 </div>
-                <div class="row">
-                    <p class="humidity">Humidity:</p>
+                <div class="current">
+                    <p >Humidity:<span class="humidity"></span></p>
                 </div>
-                <div class="row">
-                    <p class="wind">Wind Speed:</p>
+                <div class="current">
+                    <p>Wind Speed:<span class="wind"></span></p>
                 </div>
-                <div class="row">
-                    <p class="uv">UV Index:</p>
+                <div class="current">
+                    <p>UV Index:<span class="uv"></span></p>
                 </div>
+                </section>
             </div>
 
             <div class="five-day">
-                <h1>5-Day Forecast:</h1>
+                <h1 class="five-day">5-Day Forecast:</h1>
                 <div class="row cards">
                     
                 </div>
